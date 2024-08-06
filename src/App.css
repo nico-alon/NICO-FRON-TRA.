@@ -1,0 +1,229 @@
+:root {
+  --background-color: #F3F3F3; /* Usa una variable para el color de fondo */
+}
+
+html, body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color); /* Usa la variable de color */
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.main-content {
+  min-height: 100vh;
+  padding: 20px;
+  flex: 1; /* Permite que el contenido principal se expanda */
+  display: flex;
+  flex-direction: column;
+  overflow: auto; /* Permite el desplazamiento si el contenido es demasiado alto */
+}
+
+.sidebar {
+  padding: 10px;
+  width: 200px;
+}
+
+.chat-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+}
+
+.chat-window-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Permite que el chat-window-col se expanda */
+}
+
+.chat-component {
+  height: 100%;
+}
+
+.message-list-col {
+  background-color: #F3F3F3 !important; /* Fondo blanco para la lista de mensajes */
+  overflow-y: auto;
+  flex: 1; /* Permite que la lista de mensajes se expanda */
+}
+
+.message-input-col {
+  padding: 10px;
+}
+
+.message-input {
+  display: flex;
+  margin-top: auto; /* Para que el formulario esté en la parte inferior del contenedor */
+}
+
+.message-list {
+  max-height: 70vh;
+  min-height: 70vh;
+  overflow-y: auto; /* Agrega scroll si hay muchos mensajes */
+}
+
+.message-list .list-group-item {
+  background-color: #F3F3F3 !important;
+  border: none; 
+  padding: 10px; 
+}
+
+.navbar {
+  margin-bottom: 20px; 
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar .btn {
+  margin-left: 10px;
+}
+
+.cardws {
+  border: 1px solid #fff !important;
+  transition: border-color 0.3s ease-in-out;
+  height: 150px;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que el pie de la tarjeta esté en la parte inferior */
+}
+
+.cardws:hover {
+  border: 1px solid #ff7830 !important;
+  animation-delay: 1s;
+}
+
+.wsLink {
+  text-decoration: none;
+  color: #007bff; /* Color del enlace similar al botón primario de Bootstrap */
+  margin-top: auto; /* Empuja el enlace al final del contenedor */
+  margin-left: auto;
+}
+
+.cardws a {
+  text-decoration: none;
+  color: #ff7830;
+}
+
+.createBtn {
+  background-color: #ff7830 !important;
+  color: #fff !important; 
+}
+
+.createBtn:hover {
+  background-color: #f3732d !important;
+}
+
+.fa {
+  font-size: 12px;
+}
+
+.channelList, .channelList a {
+  text-decoration: none;
+  color: #333;
+}
+
+.channelList a:hover {
+  text-decoration: none;
+  color: #ff7830;
+}
+
+.breadcrumb {
+  font-size: 10px !important;
+}
+
+.editBtn {
+  color: #f3732d !important;
+}
+
+.message-list {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.message-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.message-item.my-message {
+  justify-content: flex-end;
+}
+
+.message-item.other-message {
+  justify-content: flex-start;
+}
+
+.message-content {
+  max-width: 60%;
+}
+
+.message-user {
+  font-weight: bold;
+}
+
+.message-text {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-item.other-message {
+  justify-content: flex-start;
+}
+
+.message-list {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.message-item {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: flex-start; /* Por defecto, los mensajes se alinean a la izquierda */
+}
+
+.message-item.other-message {
+  justify-content: flex-start; /* Mensajes de otros usuarios a la izquierda */
+}
+
+.message-content {
+  max-width: 60%;
+}
+
+.message-user {
+  font-weight: bold;
+}
+
+.message-text {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message-item.my-message .message-text {
+  color: white;
+  background-color: #007bff;
+}
+
+.message-item.other-message .message-text {
+  background-color: #e9ecef;
+}
+
+
+
